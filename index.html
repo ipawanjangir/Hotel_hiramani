@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiramani Hotel & Restaurant — Fatehpur Shekhawati</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-left">
+                <a href="tel:+919509777684">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    +91 95097 77684
+                </a>
+                <a href="https://wa.me/919509777684" target="_blank">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                    </svg>
+                    WhatsApp
+                </a>
+            </div>
+            <div class="topbar-rating">
+                <svg class="star" width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <strong>4.4</strong>
+                <span>on Google</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <a href="#home" class="logo">
+                <div class="logo-badge">H</div>
+                <div class="logo-text">
+                    <div class="name">HIRAMANI</div>
+                    <div class="sub">HOTEL & RESTAURANT</div>
+                </div>
+            </a>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#restaurant">Restaurant</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+                <a href="#booking" class="btn-book">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    Book Now
+                </a>
+            </nav>
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-head">
+            <div class="logo">
+                <div class="logo-badge">H</div>
+                <div class="logo-text">
+                    <div class="name">HIRAMANI</div>
+                    <div class="sub">HOTEL & RESTAURANT</div>
+                </div>
+            </div>
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Close">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                </svg>
+            </button>
+        </div>
+        <nav>
+            <a href="#home" onclick="toggleMenu()">Home</a>
+            <a href="#rooms" onclick="toggleMenu()">Rooms</a>
+            <a href="#restaurant" onclick="toggleMenu()">Restaurant</a>
+            <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="tel:+919509777684" class="btn-gold">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                Call to Book
+            </a>
+            <a href="https://wa.me/919509777684" target="_blank" class="btn-outline">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                </svg>
+                WhatsApp Us
+            </a>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <svg class="star" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+                <span>Rated 4.4 on Google</span>
+                <span style="opacity:0.4">•</span>
+                <span>Fatehpur Shekhawati</span>
+            </div>
+            <h1>Hiramani Hotel<br><span class="gold">Fatehpur Shekhawati</span></h1>
+            <p>High comfort at low prices — AC rooms, free Wi-Fi & parking, and authentic Rajasthani dining in the heart
+                of Shekhawati</p>
+            <div class="hero-ctas">
+                <a href="#booking" class="btn btn-gold-lg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect width="18" height="18" x="3" y="4" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                    </svg>
+                    Book Direct Now
+                </a>
+                <a href="tel:+919509777684" class="btn btn-outline-lg">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    Call: 95097 77684
+                </a>
+            </div>
+            <div class="hero-trust">
+                <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                        <path d="m9 12 2 2 4-4" />
+                    </svg> No Advance Required</span>
+                <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                        <path d="m9 12 2 2 4-4" />
+                    </svg> Free Cancellation 24hrs</span>
+                <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                        <path d="m9 12 2 2 4-4" />
+                    </svg> Best Price Guarantee</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL BAR -->
+    <div class="call-bar">
+        <div class="container">
+            <a href="tel:+919509777684" style="display:flex;align-items:center;gap:16px;color:inherit;">
+                <div class="call-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                </div>
+                <div class="call-text">
+                    <div class="label">Call for Best Prices</div>
+                    <div class="number">+91 95097 77684</div>
+                </div>
+            </a>
+            <div class="call-note">
+                No advance payment. Pay at hotel.<br>
+                <strong style="color:var(--gold);">Best rates guaranteed — always cheaper than OTAs</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- OTA LINKS -->
+    <div class="ota-section">
+        <div class="container">
+            <p>Also Available On</p>
+            <div class="ota-links">
+                <a href="#" class="ota-card">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#003580" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                        <path d="M2 12h20" />
+                    </svg>
+                    <div>
+                        <div class="name">Booking.com</div>
+                        <div class="price">from ₹1,394/night</div>
+                    </div>
+                </a>
+                <a href="#" class="ota-card">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2">
+                        <path
+                            d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
+                    </svg>
+                    <div>
+                        <div class="name">MakeMyTrip</div>
+                        <div class="price">from ₹1,389/night</div>
+                    </div>
+                </a>
+                <a href="#" class="ota-card">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2">
+                        <rect width="16" height="20" x="4" y="2" rx="2" />
+                        <path d="M9 22v-4h6v4" />
+                    </svg>
+                    <div>
+                        <div class="name">Goibibo</div>
+                        <div class="price">from ₹1,363/night</div>
+                    </div>
+                </a>
+            </div>
+            <div class="direct-highlight">
+                💰 Book Direct & Save 15-20% — No Commission!
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOKING WITH CALENDAR (NEW!) -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-label">Your Stay</span>
+                <h2 class="section-title">Check Availability & Book Direct</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="booking-grid">
+                <!-- Calendar -->
+                <div class="calendar-card">
+                    <h3>Select Your Dates</h3>
+                    <div class="cal-head">
+                        <button onclick="prevMonth()" aria-label="Previous month">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="m15 18-6-6 6-6" />
+                            </svg>
+                        </button>
+                        <div class="month" id="calMonth">October 2026</div>
+                        <button onclick="nextMonth()" aria-label="Next month">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="cal-grid" id="calGrid"></div>
+
+                    <div class="rooms-list">
+                        <h4>Available Rooms</h4>
+                        <div class="room-item available">
+                            <div>
+                                <div class="name">Standard Room</div>
+                                <div class="meta">Double Bed · City View</div>
+                            </div>
+                            <div style="text-align:right;">
+                                <div class="price">₹1,200</div>
+                                <span class="status avail">Available</span>
+                            </div>
+                        </div>
+                        <div class="room-item available">
+                            <div>
+                                <div class="name">Deluxe Double Room</div>
+                                <div class="meta">King Bed · City View</div>
+                            </div>
+                            <div style="text-align:right;">
+                                <div class="price">₹1,800</div>
+                                <span class="status avail">Available</span>
+                            </div>
+                        </div>
+                        <div class="room-item booked">
+                            <div>
+                                <div class="name">Suite Room</div>
+                                <div class="meta">King Bed · Balcony</div>
+                            </div>
+                            <div style="text-align:right;">
+                                <div class="price">₹2,500</div>
+                                <span class="status no">Booked</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form-card">
+                    <h3>Complete Your Booking</h3>
+                    <p class="sub">Fill details — get instant confirmation on WhatsApp</p>
+
+                    <form id="bookingForm" onsubmit="handleBooking(event)">
+                        <div class="form-dates">
+                            <div class="form-row">
+                                <label>Check-in</label>
+                                <input type="text" id="checkin" placeholder="15 Oct 2026" readonly>
+                            </div>
+                            <div class="form-row">
+                                <label>Check-out</label>
+                                <input type="text" id="checkout" placeholder="17 Oct 2026" readonly>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label>Full Name</label>
+                            <input type="text" id="guestName" placeholder="Your name" required>
+                        </div>
+                        <div class="form-row">
+                            <label>Phone Number</label>
+                            <input type="tel" id="guestPhone" placeholder="+91 XXXXX XXXXX" required>
+                        </div>
+                        <div class="form-row">
+                            <label>Room Type</label>
+                            <select id="roomType">
+                                <option value="standard-1200">Standard Room — ₹1,200/night</option>
+                                <option value="deluxe-1800">Deluxe Double Room — ₹1,800/night</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label>Guests</label>
+                            <select id="guestCount">
+                                <option>1 Guest</option>
+                                <option selected>2 Guests</option>
+                                <option>3 Guests</option>
+                                <option>4 Guests</option>
+                            </select>
+                        </div>
+
+                        <div class="booking-summary" id="bookingSummary">
+                            <div class="row"><span>Room rate</span><span id="sumRate">₹0/night</span></div>
+                            <div class="row"><span>Nights</span><span id="sumNights">0</span></div>
+                            <div class="row total"><span>Total</span><span id="sumTotal">₹0</span></div>
+                        </div>
+
+                        <button type="submit" class="btn-book-now">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            Confirm Booking
+                        </button>
+                    </form>
+
+                    <button class="btn-wa" onclick="bookOnWhatsApp()">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                        </svg>
+                        Book via WhatsApp Instead
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="col">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=500"
+                            alt="Hotel entrance">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=500" alt="Corridor">
+                    </div>
+                    <div class="col">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500" alt="Restaurant">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=500" alt="Room">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-label">Our Story</span>
+                    <h2>Welcome to Hiramani</h2>
+                    <div class="gold-line"></div>
+                    <p>Nestled on NH-52 in the historic town of <strong>Fatehpur Shekhawati</strong>, Hiramani Hotel &
+                        Restaurant offers travelers a warm retreat in the heart of Rajasthan's painted haveli country.
+                    </p>
+                    <p>Whether you're a business traveler, a tourist exploring the UNESCO-recognized frescoed havelis,
+                        or a family looking for a comfortable overnight stay — we provide clean, air-conditioned rooms
+                        with honest hospitality and home-style Rajasthani food.</p>
+                    <p>Our philosophy is simple: <strong>high comfort at low prices</strong>, with service that makes
+                        you feel at home.</p>
+                    <div class="about-stats">
+                        <div>
+                            <div class="num">24/7</div>
+                            <div class="lbl">Always Open</div>
+                        </div>
+                        <div>
+                            <div class="num">4.4★</div>
+                            <div class="lbl">Google Rating</div>
+                        </div>
+                        <div>
+                            <div class="num">₹0</div>
+                            <div class="lbl">Advance Needed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section style="background:var(--gray-50);">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-label">What We Offer</span>
+                <h2 class="section-title">Services & Amenities</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2M9.6 4.6A2 2 0 1 1 11 8H2M12.6 19.4A2 2 0 1 0 14 16H2" />
+                        </svg>
+                    </div>
+                    <h3>Air-Conditioned</h3>
+                    <p>All rooms are fully climate controlled for year-round comfort.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M12 20h.01M2 8.82a15 15 0 0 1 20 0M5 12.859a10 10 0 0 1 14 0M8.5 16.429a5 5 0 0 1 7 0" />
+                        </svg>
+                    </div>
+                    <h3>Free Wi-Fi</h3>
+                    <p>High-speed internet throughout the property.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" />
+                            <circle cx="7" cy="17" r="2" />
+                            <circle cx="17" cy="17" r="2" />
+                        </svg>
+                    </div>
+                    <h3>Free Parking</h3>
+                    <p>Complimentary secure parking right at the hotel.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
+                        </svg>
+                    </div>
+                    <h3>Room Service</h3>
+                    <p>24-hour room service for your convenience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Z" />
+                        </svg>
+                    </div>
+                    <h3>Restaurant</h3>
+                    <p>Authentic Rajasthani & multi-cuisine dining.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="m4 4 2.5 2.5M13.5 6.5a4.95 4.95 0 0 0-7 7M15 5 5 15" />
+                        </svg>
+                    </div>
+                    <h3>Laundry Service</h3>
+                    <p>Same-day laundry and dry cleaning available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROOMS -->
+    <section id="rooms">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-label">Your Stay</span>
+                <h2 class="section-title">Accommodations</h2>
+                <div class="section-line"></div>
+                <p style="color:var(--gray-500);margin-top:16px;max-width:600px;margin-left:auto;margin-right:auto;">
+                    Comfortable, clean rooms designed for rest. No advance payment required — pay at the hotel.</p>
+            </div>
+
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=700" alt="Standard Room">
+                    <div class="room-card-body">
+                        <h3>Standard Room</h3>
+                        <p class="desc">Comfortable room with city view and essential amenities. Free cancellation
+                            available up to 24 hours before check-in.</p>
+                        <div class="room-card-features">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <polyline points="9 21 3 21 3 15" />
+                                </svg> 192 sq.ft</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg> City View</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M9 6 6.5 3.5M2 12h20" />
+                                </svg> 1 Bathroom</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20" />
+                                </svg> Double Bed</span>
+                        </div>
+                        <div class="room-card-actions">
+                            <a href="#booking" class="btn-gold">₹1,200 <span
+                                    style="font-weight:400;font-size:12px;">/night</span></a>
+                            <a href="tel:+919509777684" class="btn-outline-dark">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=700" alt="Deluxe Room">
+                    <div class="room-card-body">
+                        <h3>Deluxe Double Room</h3>
+                        <p class="desc">Spacious deluxe room with city view and enhanced comfort. Free cancellation
+                            available up to 24 hours before check-in.</p>
+                        <div class="room-card-features">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <polyline points="9 21 3 21 3 15" />
+                                </svg> 240 sq.ft</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg> City View</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M9 6 6.5 3.5M2 12h20" />
+                                </svg> 1 Bathroom</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20" />
+                                </svg> King Bed</span>
+                        </div>
+                        <div class="room-card-actions">
+                            <a href="#booking" class="btn-gold">₹1,800 <span
+                                    style="font-weight:400;font-size:12px;">/night</span></a>
+                            <a href="tel:+919509777684" class="btn-outline-dark">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESTAURANT -->
+    <section class="restaurant-section" id="restaurant">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-label">Dine With Us</span>
+                <h2 class="section-title">Exquisite Dining</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="restaurant-grid">
+                <div class="restaurant-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700"
+                        alt="Hiramani Restaurant" class="restaurant-img">
+                    <div class="restaurant-badge">
+                        <div class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Authentic Rajasthani Cuisine</h4>
+                            <p>Traditional flavors with a modern touch</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p style="color:var(--gray-700);line-height:1.7;margin-bottom:20px;">Indulge in a culinary journey
+                        where traditional Rajasthani flavors meet comfort cuisine. Our chefs use the freshest
+                        ingredients to create memorable dining experiences in a spacious, modern setting.</p>
+
+                    <div
+                        style="background:var(--gray-50);padding:14px 18px;border-radius:10px;display:flex;align-items:center;gap:12px;margin-bottom:20px;font-size:14px;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-dark)"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                        <span>Open Daily — <strong>7:00 AM – 11:00 PM</strong></span>
+                    </div>
+
+                    <div
+                        style="background:var(--primary);color:#fff;padding:20px;border-radius:12px;margin-bottom:16px;">
+                        <div
+                            style="color:var(--gold);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:8px;">
+                            Signature Dish</div>
+                        <h4 class="serif" style="font-size:20px;margin-bottom:4px;">Special Hiramani Paneer</h4>
+                        <p style="font-size:13px;color:#9ca3af;margin-bottom:10px;">Our signature paneer dish with
+                            special spices — a guest favorite</p>
+                        <div style="display:flex;gap:20px;font-weight:600;color:var(--gold);">
+                            <span>Half: ₹170</span>
+                            <span>Full: ₹290</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="info">
+                                <h4>Kadai Paneer</h4>
+                                <p>Traditional style kadai paneer</p>
+                            </div>
+                            <div class="price">Half: ₹110<br>Full: ₹210</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="info">
+                                <h4>Shahi Paneer</h4>
+                                <p>Rich and creamy royal gravy</p>
+                            </div>
+                            <div class="price">Half: ₹120<br>Full: ₹210</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="info">
+                                <h4>Dal Bati Churma</h4>
+                                <p>Authentic Rajasthani thali</p>
+                            </div>
+                            <div class="price">₹250</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY (FIXED!) -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-label">Visual Tour</span>
+                <h2 class="section-title">Our Gallery</h2>
+                <div class="section-line"></div>
+                <p style="color:var(--gray-500);margin-top:16px;max-width:600px;margin-left:auto;margin-right:auto;">
+                    Take a visual tour of our hotel, rooms, restaurant, and surroundings.</p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rooms">Rooms</button>
+                <button class="filter-btn" data-filter="restaurant">Restaurant</button>
+                <button class="filter-btn" data-filter="exterior">Exterior</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Rooms -->
+                <div class="gallery-item" data-cat="rooms">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600" alt="Standard Room">
+                    <span class="gallery-tag">Rooms</span>
+                    <div class="label">Standard Room Interior</div>
+                </div>
+                <div class="gallery-item" data-cat="rooms">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600" alt="Deluxe Room">
+                    <span class="gallery-tag">Rooms</span>
+                    <div class="label">Deluxe Double Room</div>
+                </div>
+                <div class="gallery-item" data-cat="rooms">
+                    <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600" alt="Bedroom">
+                    <span class="gallery-tag">Rooms</span>
+                    <div class="label">Bedroom Interior</div>
+                </div>
+
+                <!-- Restaurant -->
+                <div class="gallery-item" data-cat="restaurant">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600" alt="Restaurant">
+                    <span class="gallery-tag">Restaurant</span>
+                    <div class="label">Restaurant Dining Area</div>
+                </div>
+                <div class="gallery-item" data-cat="restaurant">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600" alt="Dining">
+                    <span class="gallery-tag">Restaurant</span>
+                    <div class="label">Interior Seating</div>
+                </div>
+
+                <!-- Exterior -->
+                <div class="gallery-item" data-cat="exterior">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600" alt="Building">
+                    <span class="gallery-tag">Exterior</span>
+                    <div class="label">Hotel Building — NH 52</div>
+                </div>
+                <div class="gallery-item" data-cat="exterior">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=600" alt="Entrance">
+                    <span class="gallery-tag">Exterior</span>
+                    <div class="label">Hotel Entrance</div>
+                </div>
+
+                <!-- Interior -->
+                <div class="gallery-item" data-cat="interior">
+                    <img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=600" alt="Corridor">
+                    <span class="gallery-tag">Interior</span>
+                    <div class="label">Corridor & Hallway</div>
+                </div>
+                <div class="gallery-item" data-cat="interior">
+                    <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=600" alt="Bathroom">
+                    <span class="gallery-tag">Interior</span>
+                    <div class="label">Modern Bathroom</div>
+                </div>
+                <div class="gallery-item" data-cat="interior">
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=600" alt="Lobby">
+                    <span class="gallery-tag">Interior</span>
+                    <div class="label">Lobby Area</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section style="background:var(--gray-50);">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-label">What Guests Say</span>
+                <h2 class="section-title">Guest Experiences</h2>
+                <div class="section-line"></div>
+                <div
+                    style="display:inline-flex;align-items:center;gap:12px;background:#fff;border-radius:50px;padding:10px 20px;margin-top:20px;">
+                    <div style="display:flex;gap:2px;color:#fbbf24;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                    </div>
+                    <strong style="color:var(--primary);">4.4</strong>
+                    <span style="color:var(--gray-500);font-size:13px;">71 Reviews on Google</span>
+                </div>
+            </div>
+
+            <div class="testimonials-row">
+                <div class="testimonial">
+                    <div class="testimonial-head">
+                        <div class="avatar">MR</div>
+                        <div>
+                            <div class="name">Mukesh Rathor</div>
+                            <div class="date">2 months ago</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>"Nice service and room super fast service. Best stay in Shekhawati."</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-head">
+                        <div class="avatar">KB</div>
+                        <div>
+                            <div class="name">Kulvinder Brar</div>
+                            <div class="date">3 months ago</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>"Very nice food and accommodation. The rooms are hygienic with clean food."</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-head">
+                        <div class="avatar">VN</div>
+                        <div>
+                            <div class="name">Vishal Nigam</div>
+                            <div class="date">a month ago</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>"Very homely stay with best courteous staff. Food is so delicious with Rajasthani taste."</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-head">
+                        <div class="avatar">KU</div>
+                        <div>
+                            <div class="name">Kuldeep U.K</div>
+                            <div class="date">10 months ago</div>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                    <p>"Ultimate preparation of food. Neat and clean rooms. Health vibes. Safe parking."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title">Contact & Location</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Ground Floor, Building No. J, Ward No. 05, NH 52, Near Jangir Ka Kuwa, Fatehpur
+                                Shekhawati, Rajasthan 332301</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:01571294999">01571 294999</a><br>
+                            <a href="tel:+919509777684">+91 95097 77684</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect width="20" height="16" x="2" y="4" rx="2" />
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:hiramanihotel.1@gmail.com">hiramanihotel.1@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Open</h4>
+                            <p>24 hours, 7 days a week</p>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect width="20" height="20" x="2" y="2" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/919509777684" aria-label="WhatsApp">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="map-wrap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3552.8876343157547!2d74.94806249999999!3d27.989562499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3914a90794033c8b%3A0xf7ff744aea3b51d0!2sHiramani%20Hotel!5e0!3m2!1sen!2sin!4v1708444254611!5m2!1sen!2sin"
+                        loading="lazy" title="Hiramani Hotel Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg></div>
+                    <div class="num">500+</div>
+                    <div class="lbl">Happy Guests</div>
+                </div>
+                <div class="stat">
+                    <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg></div>
+                    <div class="num">4.4★</div>
+                    <div class="lbl">Google Rating</div>
+                </div>
+                <div class="stat">
+                    <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg></div>
+                    <div class="num">24/7</div>
+                    <div class="lbl">Always Open</div>
+                </div>
+                <div class="stat">
+                    <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77" />
+                        </svg></div>
+                    <div class="num">5+</div>
+                    <div class="lbl">Years of Service</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final">
+        <div class="container">
+            <h2 class="serif">Ready for an Unforgettable Stay?</h2>
+            <p>No advance payment needed — pay when you arrive.</p>
+            <a href="tel:+919509777684" class="btn btn-gold-lg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                Call Now: +91 95097 77684
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="logo" style="margin-bottom:16px;">
+                        <div class="logo-badge">H</div>
+                        <div class="logo-text">
+                            <div class="name">HIRAMANI</div>
+                            <div class="sub">HOTEL & RESTAURANT</div>
+                        </div>
+                    </div>
+                    <p>Experience comfort and warmth at Hiramani Hotel, where every stay becomes a memorable journey in
+                        the heart of Shekhawati.</p>
+                    <div class="socials">
+                        <a href="#" style="background:rgba(255,255,255,0.05);border-color:transparent;color:#9ca3af;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" style="background:rgba(255,255,255,0.05);border-color:transparent;color:#9ca3af;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect width="20" height="20" x="2" y="2" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/919509777684"
+                            style="background:rgba(255,255,255,0.05);border-color:transparent;color:#9ca3af;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#restaurant">Restaurant</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:01571294999">01571 294999</a></li>
+                        <li><a href="tel:+919509777684">+91 95097 77684</a></li>
+                        <li><a href="mailto:hiramanihotel.1@gmail.com">hiramanihotel.1@gmail.com</a></li>
+                        <li>24/7 — Always Open</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Hotel Info</h4>
+                    <ul>
+                        <li>NH 52, Fatehpur Shekhawati</li>
+                        <li>Rajasthan 332301</li>
+                        <li>Check-in: 12:00 PM</li>
+                        <li>Check-out: 11:00 AM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Hiramani Hotel & Restaurant. All rights reserved.</span>
+                <button onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m5 12 7-7 7 7" />
+                        <path d="M12 19V5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING BUTTONS -->
+    <div class="floating">
+        <a href="https://wa.me/919509777684" target="_blank" class="float-btn float-wa">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+            </svg>
+            <span>WhatsApp</span>
+        </a>
+        <a href="tel:+919509777684" class="float-btn float-call">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>Book Now</span>
+        </a>
+    </div>
+
+    <!-- BOOKING CONFIRMATION POPUP -->
+<div class="modal-overlay" id="bookingPopup">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closePopup()">×</button>
+    
+    <div class="modal-header">
+      <div class="modal-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      </div>
+      <h3>Confirm Your Booking</h3>
+      <p>Please check your details before confirming</p>
+    </div>
+
+    <div class="modal-body">
+      <div class="summary-row">
+        <span>Guest Name</span>
+        <strong id="popName">—</strong>
+      </div>
+      <div class="summary-row">
+        <span>Phone</span>
+        <strong id="popPhone">—</strong>
+      </div>
+      <div class="summary-row">
+        <span>Room Type</span>
+        <strong id="popRoom">—</strong>
+      </div>
+      <div class="summary-row">
+        <span>Check-in</span>
+        <strong id="popCheckin">—</strong>
+      </div>
+      <div class="summary-row">
+        <span>Check-out</span>
+        <strong id="popCheckout">—</strong>
+      </div>
+      <div class="summary-row">
+        <span>Guests</span>
+        <strong id="popGuests">—</strong>
+      </div>
+      <div class="summary-row total">
+        <span>Total Amount</span>
+        <strong id="popTotal">₹0</strong>
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn-modal-cancel" onclick="closePopup()">Cancel</button>
+      <button class="btn-modal-confirm" onclick="confirmBookingFinal()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+        Confirm & Send to Hotel
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SUCCESS TOAST -->
+<div class="toast" id="successToast">
+  <div class="toast-icon">✓</div>
+  <div>
+    <strong>Booking Confirmed!</strong>
+    <span>WhatsApp par details bheji gayi hain</span>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
